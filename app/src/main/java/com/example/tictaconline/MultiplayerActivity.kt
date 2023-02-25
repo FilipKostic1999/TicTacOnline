@@ -163,7 +163,7 @@ class MultiplayerActivity : AppCompatActivity() {
     }
 
     private fun setTurnLabel() {
-        val turnText: String
+        var turnText: String
         if (currentTurn == Turn.CROSS)
             turnText = "Turn $CROSS"
         else if (currentTurn == Turn.NOUGHT) {
