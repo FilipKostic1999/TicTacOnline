@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8D9A81C6"
     tools:context=".MultiplayerActivity">
 
     <TextView
@@ -29,27 +30,26 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            style="@style/row">
+        <LinearLayout style="@style/row">
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/a1"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
             <View style="@style/verticalLine" />
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/a2"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
             <View style="@style/verticalLine" />
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/a3"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
 
         </LinearLayout>
@@ -59,51 +59,50 @@
         <LinearLayout style="@style/row">
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/b1"
-                style="@style/column" />
+                style="@style/column"
+                android:onClick="boardTaped" />
 
             <View style="@style/verticalLine" />
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/b2"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
             <View style="@style/verticalLine" />
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/b3"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
 
         </LinearLayout>
 
         <View style="@style/horizontalLine" />
 
-        <LinearLayout
-            style="@style/row">
+        <LinearLayout style="@style/row">
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/c1"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
             <View style="@style/verticalLine" />
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/c2"
-                style="@style/column" />
+                style="@style/column"
+                android:onClick="boardTaped" />
 
             <View style="@style/verticalLine" />
 
 
             <Button
-                android:onClick="boardTaped"
                 android:id="@+id/c3"
-                style="@style/column"/>
+                style="@style/column"
+                android:onClick="boardTaped" />
 
 
         </LinearLayout>
@@ -111,6 +110,20 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button_back1"
+        android:layout_width="141dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="MainActivity"
+        android:text="back"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
