@@ -18,11 +18,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
-
     }
+
+
+
 
     fun openNextActivity1(view: View) {
         val intent = Intent(this, MultiplayerActivity::class.java)
@@ -37,6 +36,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, StatsActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
     }
