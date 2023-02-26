@@ -1,5 +1,6 @@
 package com.example.tictaconline
 
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -34,10 +35,45 @@ class MultiplayerActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMultiplayerBinding
 
+
+
+    lateinit var button_back1 : Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
+
+
         binding = ActivityMultiplayerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
+
+
+
+        button_back1 = findViewById(R.id.button_back1)
+
+
+
+        button_back1.setOnClickListener {
+
+            val intent = Intent(this, MainActivity :: class.java)
+            startActivity(intent)
+
+
+        }
+
+
+
+
+
+
+
+
 
         points_pl1 = findViewById(R.id.points_Pl1)
         points_pl2 = findViewById(R.id.points_Pl2)
