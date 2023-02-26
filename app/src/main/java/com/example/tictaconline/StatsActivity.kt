@@ -1,8 +1,10 @@
 package com.example.tictaconline
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 
 class StatsActivity : AppCompatActivity() {
@@ -12,6 +14,7 @@ class StatsActivity : AppCompatActivity() {
     lateinit var textViewP2 : TextView
 
 
+    lateinit var button_back : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +23,18 @@ class StatsActivity : AppCompatActivity() {
 
 
 
+        button_back = findViewById(R.id.button_back)
+
+
+
+
+        button_back.setOnClickListener {
+
+            val intent = Intent(this, MainActivity :: class.java)
+            startActivity(intent)
+
+
+        }
 
 
         textViewP1 = findViewById(R.id.Stats1)
