@@ -25,7 +25,11 @@ class MainActivity : AppCompatActivity() {
     fun openNextActivity2(view: View) {
         val intent = Intent(this, RecycleViewUsersActivity::class.java)
         startActivity(intent)
+    }
+        fun openNextActivity4(view: View) {
+            val intent = Intent(this, StatsActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }
-}

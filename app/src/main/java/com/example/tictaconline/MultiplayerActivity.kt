@@ -1,13 +1,14 @@
 package com.example.tictaconline
 
-import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.example.tictaconline.databinding.ActivityMultiplayerBinding
+import java.util.*
 
 class MultiplayerActivity : AppCompatActivity() {
 
@@ -15,24 +16,35 @@ class MultiplayerActivity : AppCompatActivity() {
         NOUGHT,
         CROSS
     }
-
     private var crossesScore = 0
     private var noughtsScore = 0
 
     private var firstTurn = Turn.CROSS
     private var currentTurn = Turn.NOUGHT
 
+    lateinit var points_pl1: TextView
+    lateinit var points_pl2: TextView
+
+
+    var pointsPl1 = 0
+    var pointsPl2 = 0
+
+
     private var boardList = mutableListOf<Button>()
 
     private lateinit var binding: ActivityMultiplayerBinding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMultiplayerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        points_pl1 = findViewById(R.id.points_Pl1)
+        points_pl2 = findViewById(R.id.points_Pl2)
 
+        val shared = getSharedPreferences("Score", MODE_PRIVATE)
+        crossesScore = shared.getInt("Score", 0)
+        noughtsScore = shared.getInt("Score2", 0)
 
         initBoard()
     }
@@ -51,7 +63,9 @@ class MultiplayerActivity : AppCompatActivity() {
         boardList.add(binding.c3)
     }
 
-
+   // val shared: SharedPreferences = getSharedPreferences("Score", MODE_PRIVATE)
+    //crossesScore  = shared.getInt("Score", 0)
+    //noughtsScore = shared.getInt("Score2", 0)
 
 
     fun boardTaped(view: View) {
@@ -61,21 +75,37 @@ class MultiplayerActivity : AppCompatActivity() {
         addToBoard(view)
         
         if(checkForVictory(NOUGHT)){
-
+            pointsPl1++
             noughtsScore++
+            val shared = getSharedPreferences("Score", MODE_PRIVATE)
+            val edit = shared.edit()
+
+            edit.putInt("Score", noughtsScore)
+            points_pl1.text = "pointsPl1: $pointsPl1"
+
+            edit.commit()
             result("Noughts Win!")
         }
 
         if(checkForVictory(CROSS)){
-
+            pointsPl2++
             crossesScore++
+            val shared = getSharedPreferences("Score2", MODE_PRIVATE)
+            val edit = shared.edit()
+
+            edit.putInt("Score2", crossesScore)
+            points_pl2.text = "pointsPl2: $pointsPl2"
+
+            edit.commit()
             result("Crosses Win!")
+
         }
 
         if(fullBoard()) {
 
             result("Draw")
         }
+
     }
 
     private fun checkForVictory(s: String): Boolean {
@@ -187,4 +217,5 @@ class MultiplayerActivity : AppCompatActivity() {
         const val CROSS = "X"
     }
 
-    }
+}
+
