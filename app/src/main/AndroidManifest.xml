@@ -13,7 +13,21 @@
         android:theme="@style/Theme.TicTacOnline"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".createLobby"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".createLobbyActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".onlineMultiplayer"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -50,7 +64,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".onlineMultiplayer"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

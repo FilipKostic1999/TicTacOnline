@@ -39,5 +39,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    fun openNextActivity5(view: View) {
+        val intent = Intent(this, LogInActivity::class.java)
+        startActivity(intent)
+    }
+
+
 
     }
