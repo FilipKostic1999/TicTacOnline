@@ -28,7 +28,7 @@ class createUsername : AppCompatActivity() {
     lateinit var database: FirebaseFirestore
 
 
-    var name = ""
+    var nameU = ""
     var usernameExists: Boolean = false
 
 
@@ -52,6 +52,7 @@ class createUsername : AppCompatActivity() {
 
 
 
+        /*
 
         if (user != null) {
 
@@ -82,6 +83,8 @@ class createUsername : AppCompatActivity() {
 
         }
 
+*/
+
 
         saveNameBtn.setOnClickListener {
 
@@ -107,14 +110,20 @@ class createUsername : AppCompatActivity() {
             val user = firebaseAuth.currentUser
 
 
-            val nameDoc = username(name = createNameEdit.text.toString())
-            name = createNameEdit.text.toString()
+
+            nameU = createNameEdit.text.toString()
+
+            /*
+
+            val gridUser = grid(a1 = 0, a2 = 0, a3 = 0, b1 = 0, b2 = 0, b3 = 0, c1 = 0, c2 = 0, c3 = 0, name = nameU,
+            turn = false, accepted = false, sender = false)
+
 
 
             if (user != null) {
 
-                database.collection("Users").document(user.uid)
-                    .collection("Names").document("$name").set(nameDoc)
+                database.collection("Users").document("All players")
+                    .collection("$nameU").document("$nameU").set(gridUser)
 
 
                     .addOnCompleteListener {
@@ -128,6 +137,39 @@ class createUsername : AppCompatActivity() {
 
 
             }
+*/
+
+            val userName = username(name = nameU)
+
+
+            if (user != null) {
+
+                database.collection("Users").document(user.uid)
+                    .collection("user name").document("$nameU").set(userName)
+
+
+                    .addOnCompleteListener {
+
+
+                        Log.d("!!!", "item saved")
+
+
+                    }
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 
