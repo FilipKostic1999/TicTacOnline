@@ -21,8 +21,9 @@
 
     <Button
         android:id="@+id/saveNameBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_radius_button"
         android:layout_marginTop="240dp"
         android:text="save"
         app:layout_constraintEnd_toEndOf="parent"

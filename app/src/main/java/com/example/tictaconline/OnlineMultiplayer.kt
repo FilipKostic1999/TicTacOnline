@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import com.example.tictaconline.R.drawable.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -11,7 +12,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
-class onlineMultiplayer : AppCompatActivity() {
+class OnlineMultiplayer : AppCompatActivity() {
 
 
     lateinit var a1Column : ImageView
@@ -164,75 +165,76 @@ class onlineMultiplayer : AppCompatActivity() {
                         // Sets x and o for both players
 
                         if (Grid1.a1 == 1) {
-                            a1Column.setImageResource(R.drawable.cross)
+                            a1Column.setImageResource(xline)
                         } else if (Grid1.a1 == 2) {
-                            a1Column.setImageResource(R.drawable.donut)
+                            a1Column.setImageResource(oline)
                         } else if (Grid1.a1 == 0) {
-                            a1Column.setImageResource(R.drawable.white_sq)
+                            a1Column.setImageResource(ticbc)
                         }
 
+
                         if (Grid1.a2 == 1) {
-                            a2Column.setImageResource(R.drawable.cross)
+                            a2Column.setImageResource(xline)
                         } else if (Grid1.a2 == 2) {
-                            a2Column.setImageResource(R.drawable.donut)
+                            a2Column.setImageResource(oline)
                         } else if (Grid1.a2 == 0) {
-                            a2Column.setImageResource(R.drawable.white_sq)
+                            a2Column.setImageResource(oline)
                         }
 
                         if (Grid1.a3 == 1) {
-                            a3Column.setImageResource(R.drawable.cross)
+                            a3Column.setImageResource(xline)
                         } else if (Grid1.a3 == 2) {
-                            a3Column.setImageResource(R.drawable.donut)
+                            a3Column.setImageResource(oline)
                         } else if (Grid1.a3 == 0) {
-                            a3Column.setImageResource(R.drawable.white_sq)
+                            a3Column.setImageResource(ticbc)
                         }
 
                         if (Grid1.b1 == 1) {
-                            b1Column.setImageResource(R.drawable.cross)
+                            b1Column.setImageResource(xline)
                         } else if (Grid1.b1 == 2) {
-                            b1Column.setImageResource(R.drawable.donut)
+                            b1Column.setImageResource(oline)
                         } else if (Grid1.b1 == 0) {
-                            b1Column.setImageResource(R.drawable.white_sq)
+                            b1Column.setImageResource(ticbc)
                         }
 
                         if (Grid1.b2 == 1) {
-                            b2Column.setImageResource(R.drawable.cross)
+                            b2Column.setImageResource(xline)
                         } else if (Grid1.b2 == 2) {
-                            b2Column.setImageResource(R.drawable.donut)
+                            b2Column.setImageResource(oline)
                         } else if (Grid1.b2 == 0) {
-                            b2Column.setImageResource(R.drawable.white_sq)
+                            b2Column.setImageResource(ticbc)
                         }
 
                         if (Grid1.b3 == 1) {
-                            b3Column.setImageResource(R.drawable.cross)
+                            b3Column.setImageResource(xline)
                         } else if (Grid1.b3 == 2) {
-                            b3Column.setImageResource(R.drawable.donut)
+                            b3Column.setImageResource(oline)
                         } else if (Grid1.b3 == 0) {
-                            b3Column.setImageResource(R.drawable.white_sq)
+                            b3Column.setImageResource(ticbc)
                         }
 
                         if (Grid1.c1 == 1) {
-                            c1Column.setImageResource(R.drawable.cross)
+                            c1Column.setImageResource(xline)
                         } else if (Grid1.c1 == 2) {
-                            c1Column.setImageResource(R.drawable.donut)
+                            c1Column.setImageResource(oline)
                         } else if (Grid1.c1 == 0) {
-                            c1Column.setImageResource(R.drawable.white_sq)
+                            c1Column.setImageResource(ticbc)
                         }
 
                         if (Grid1.c2 == 1) {
-                            c2Column.setImageResource(R.drawable.cross)
+                            c2Column.setImageResource(xline)
                         } else if (Grid1.c2 == 2) {
-                            c2Column.setImageResource(R.drawable.donut)
+                            c2Column.setImageResource(oline)
                         } else if (Grid1.c2 == 0) {
-                            c2Column.setImageResource(R.drawable.white_sq)
+                            c2Column.setImageResource(ticbc)
                         }
 
                         if (Grid1.c3 == 1) {
-                            c3Column.setImageResource(R.drawable.cross)
+                            c3Column.setImageResource(xline)
                         } else if (Grid1.c3 == 2) {
-                            c3Column.setImageResource(R.drawable.donut)
+                            c3Column.setImageResource(oline)
                         } else if (Grid1.c3 == 0) {
-                            c3Column.setImageResource(R.drawable.white_sq)
+                            c3Column.setImageResource(ticbc)
                         }
 
 

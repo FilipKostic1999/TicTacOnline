@@ -53,28 +53,6 @@ class MultiplayerActivity : AppCompatActivity() {
 
 
 
-
-
-        button_back1 = findViewById(R.id.button_back1)
-
-
-
-        button_back1.setOnClickListener {
-
-            val intent = Intent(this, MainActivity :: class.java)
-            startActivity(intent)
-
-
-        }
-
-
-
-
-
-
-
-
-
         points_pl1 = findViewById(R.id.points_Pl1)
         points_pl2 = findViewById(R.id.points_Pl2)
 
