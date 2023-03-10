@@ -23,18 +23,6 @@ class StatsActivity : AppCompatActivity() {
 
 
 
-        button_back = findViewById(R.id.button_back)
-
-
-
-
-        button_back.setOnClickListener {
-
-            val intent = Intent(this, MainActivity :: class.java)
-            startActivity(intent)
-
-
-        }
 
 
         textViewP1 = findViewById(R.id.Stats1)
@@ -50,7 +38,7 @@ class StatsActivity : AppCompatActivity() {
         val shared2 = getSharedPreferences("Score2", MODE_PRIVATE)
         val Score2 = shared2.getInt("Score2", 0)
 
-        textViewP1.text = "Player1 wins: ${Score}"
+        textViewP1.text = "Player1 wins: ${Score2}"
         textViewP2.text = "Player2 wins: ${Score2}"
 
     }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.tictaconline.databinding.ActivityLogInBinding
 import com.example.tictaconline.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -47,7 +48,7 @@ class SignUpActivity : AppCompatActivity() {
         binding.signInTxt.setOnClickListener {
 
 
-            val intent = Intent(this, ActivitySignUpBinding::class.java)
+            val intent = Intent(this, ActivityLogInBinding::class.java)
 
             startActivity(intent)
         }
