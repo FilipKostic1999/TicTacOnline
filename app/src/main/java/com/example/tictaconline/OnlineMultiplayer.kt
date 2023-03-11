@@ -169,7 +169,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.a1 == 2) {
                             a1Column.setImageResource(oline)
                         } else if (Grid1.a1 == 0) {
-                            a1Column.setImageResource(ticbc)
+
                         }
 
 
@@ -178,7 +178,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.a2 == 2) {
                             a2Column.setImageResource(oline)
                         } else if (Grid1.a2 == 0) {
-                            a2Column.setImageResource(oline)
+
                         }
 
                         if (Grid1.a3 == 1) {
@@ -186,7 +186,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.a3 == 2) {
                             a3Column.setImageResource(oline)
                         } else if (Grid1.a3 == 0) {
-                            a3Column.setImageResource(ticbc)
+
                         }
 
                         if (Grid1.b1 == 1) {
@@ -194,7 +194,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.b1 == 2) {
                             b1Column.setImageResource(oline)
                         } else if (Grid1.b1 == 0) {
-                            b1Column.setImageResource(ticbc)
+
                         }
 
                         if (Grid1.b2 == 1) {
@@ -202,7 +202,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.b2 == 2) {
                             b2Column.setImageResource(oline)
                         } else if (Grid1.b2 == 0) {
-                            b2Column.setImageResource(ticbc)
+
                         }
 
                         if (Grid1.b3 == 1) {
@@ -210,7 +210,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.b3 == 2) {
                             b3Column.setImageResource(oline)
                         } else if (Grid1.b3 == 0) {
-                            b3Column.setImageResource(ticbc)
+
                         }
 
                         if (Grid1.c1 == 1) {
@@ -218,7 +218,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.c1 == 2) {
                             c1Column.setImageResource(oline)
                         } else if (Grid1.c1 == 0) {
-                            c1Column.setImageResource(ticbc)
+
                         }
 
                         if (Grid1.c2 == 1) {
@@ -226,7 +226,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.c2 == 2) {
                             c2Column.setImageResource(oline)
                         } else if (Grid1.c2 == 0) {
-                            c2Column.setImageResource(ticbc)
+
                         }
 
                         if (Grid1.c3 == 1) {
@@ -234,7 +234,7 @@ class OnlineMultiplayer : AppCompatActivity() {
                         } else if (Grid1.c3 == 2) {
                             c3Column.setImageResource(oline)
                         } else if (Grid1.c3 == 0) {
-                            c3Column.setImageResource(ticbc)
+
                         }
 
 
