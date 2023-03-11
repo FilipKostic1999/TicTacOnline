@@ -37,9 +37,6 @@ class MultiplayerActivity : AppCompatActivity() {
 
 
 
-    lateinit var button_back1 : Button
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

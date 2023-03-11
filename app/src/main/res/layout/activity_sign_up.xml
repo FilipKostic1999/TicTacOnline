@@ -7,90 +7,28 @@
     android:background="@drawable/bcbcbcbc"
     tools:context=".SignUpActivity">
 
- <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:text="Type your email"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="344dp"
-        android:text="Type your password"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
-        android:fontFamily="@font/robus"
+        android:fontFamily="@font/thebomb"
         android:gravity="center"
         android:text="Tic Tac Toe Online"
-        android:textSize="60sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/workerSignUpPasEditTexst"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="376dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/corner_radius_text"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:ems="10"
-        android:hint="Lösenord"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/workerSignUpPas2EditTexst"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="464dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/corner_radius_text"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:ems="10"
-        android:hint="Lösenord"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <EditText
         android:id="@+id/workerSignUpEmailEditTexst"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/corner_radius_text"
         android:drawableStart="@drawable/baseline_email_24"
@@ -98,56 +36,118 @@
         android:hint="E-postadress"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/signUpWorkerBut"
-        android:layout_width="348dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/corner_radius_button"
-        android:backgroundTint="#80FFFFFF"
-        android:fontFamily="@font/robus"
-        android:radius="15dp"
-        android:text="Sing Up"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Type your email"
         android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Type your password"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workerSignUpEmailEditTexst" />
+
+    <EditText
+        android:id="@+id/workerSignUpPas2EditTexst"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/corner_radius_text"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Lösenord"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="20dp"
         android:text="Repeat your password"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/workerSignUpPasEditTexst" />
 
+    <EditText
+        android:id="@+id/workerSignUpPasEditTexst"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/corner_radius_text"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Lösenord"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/signUpWorkerBut"
+        android:layout_width="348dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/corner_radius_button"
+        android:backgroundTint="#80FFFFFF"
+        android:fontFamily="@font/thebomb"
+        android:radius="15dp"
+        android:text="Sing Up"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workerSignUpPas2EditTexst" />
 
     <TextView
         android:id="@+id/signInTxt"
         android:layout_width="196dp"
         android:layout_height="27dp"
-        android:layout_marginTop="572dp"
+        android:layout_marginTop="20dp"
         android:text="@string/already_registered_log_in_here"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/signUpWorkerBut" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

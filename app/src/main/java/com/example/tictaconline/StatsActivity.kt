@@ -23,8 +23,6 @@ class StatsActivity : AppCompatActivity() {
 
 
 
-
-
         textViewP1 = findViewById(R.id.Stats1)
         textViewP2 = findViewById(R.id.Stats2)
 
@@ -38,7 +36,7 @@ class StatsActivity : AppCompatActivity() {
         val shared2 = getSharedPreferences("Score2", MODE_PRIVATE)
         val Score2 = shared2.getInt("Score2", 0)
 
-        textViewP1.text = "Player1 wins: ${Score2}"
+        textViewP1.text = "Player1 wins: ${Score}"
         textViewP2.text = "Player2 wins: ${Score2}"
 
     }
