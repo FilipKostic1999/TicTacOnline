@@ -27,23 +27,6 @@ class RecycleViewUsersActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recycle_view_users)
 
 
-        button_back1 = findViewById(R.id.button_back1)
-
-
-        button_back1.setOnClickListener {
-
-            val intent = Intent(this, MainActivity :: class.java)
-            startActivity(intent)
-
-
-        }
-
-
-
-
-
-
-
 
         for(i in 1..100) {
             users.add(User("Gallorini", i))

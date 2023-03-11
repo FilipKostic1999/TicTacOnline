@@ -4,56 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8D9A81C6"
+    android:background="@drawable/ticbc"
     tools:context=".StatsActivity">
 
     <TextView
-        android:id="@+id/Stats1"
-        android:layout_width="350dp"
-        android:layout_height="62dp"
-        android:text="Player1 wins:"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <TextView
         android:id="@+id/Stats2"
-        android:layout_width="350dp"
-        android:layout_height="62dp"
+        android:layout_width="288dp"
+        android:layout_height="54dp"
         android:layout_marginTop="80dp"
+        android:fontFamily="@font/thebomb"
         android:text="Player2 wins:"
-        android:textColor="#000000"
-        android:textSize="34sp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Stats1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.01" />
 
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="141dp"
+    <TextView
+        android:id="@+id/Stats1"
+        android:layout_width="288dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="#8E59EC"
-        android:text="back"
-        android:textColor="#000000"
-        android:textSize="16sp"
+        android:fontFamily="@font/thebomb"
+        android:text="Player 1 wins :"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
 
-
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="184dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/thebomb"
+        android:gravity="center"
+        android:text="Score:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

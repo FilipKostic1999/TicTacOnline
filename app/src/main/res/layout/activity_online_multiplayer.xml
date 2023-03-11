@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".onlineMultiplayer">
+    android:background="@drawable/ticbc"
+    tools:context=".OnlineMultiplayer">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="287dp"
-        android:layout_height="281dp"
+        android:layout_width="397dp"
+        android:layout_height="376dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.336"
-        app:srcCompat="@drawable/tic_tac_grid" />
+        app:srcCompat="@drawable/boardtic"
+        tools:srcCompat="@drawable/ticboard" />
 
 
     <ImageView
@@ -26,11 +27,11 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.097" />
+
 
     <ImageView
         android:id="@+id/a2Column"
@@ -38,12 +39,10 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/white_sq" />
-
+        app:layout_constraintVertical_bias="0.097" />
 
     <ImageView
         android:id="@+id/a3Column"
@@ -51,11 +50,11 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.097" />
+
 
     <ImageView
         android:id="@+id/b1Column"
@@ -63,11 +62,10 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.502"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.503" />
 
     <ImageView
         android:id="@+id/b2Column"
@@ -75,12 +73,10 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.502"
-        app:srcCompat="@drawable/white_sq" />
-
+        app:layout_constraintVertical_bias="0.503" />
 
     <ImageView
         android:id="@+id/b3Column"
@@ -88,11 +84,10 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.502"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.503" />
 
     <ImageView
         android:id="@+id/c1Column"
@@ -100,11 +95,10 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.948"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.909" />
 
     <ImageView
         android:id="@+id/c2Column"
@@ -112,11 +106,10 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.948"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.909" />
 
     <ImageView
         android:id="@+id/c3Column"
@@ -124,57 +117,57 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.948"
-        app:srcCompat="@drawable/white_sq" />
+        app:layout_constraintVertical_bias="0.909" />
 
     <TextView
         android:id="@+id/winnerTxt"
         android:layout_width="338dp"
         android:layout_height="61dp"
+        android:fontFamily="@font/thebomb"
         android:textSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.764" />
 
     <TextView
         android:id="@+id/player1IsPresentTxt"
-        android:layout_width="162dp"
-        android:layout_height="37dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        android:layout_width="180dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/corner_radius_score"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/player2IsPresentTxt"
-        android:layout_width="147dp"
-        android:layout_height="37dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="180dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/corner_radius_score"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/newMatchBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_radius_button"
+        android:fontFamily="@font/thebomb"
         android:text="New match"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintVertical_bias="0.873" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

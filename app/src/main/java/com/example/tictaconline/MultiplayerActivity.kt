@@ -37,9 +37,6 @@ class MultiplayerActivity : AppCompatActivity() {
 
 
 
-    lateinit var button_back1 : Button
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -49,28 +46,6 @@ class MultiplayerActivity : AppCompatActivity() {
 
         binding = ActivityMultiplayerBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-
-
-
-
-        button_back1 = findViewById(R.id.button_back1)
-
-
-
-        button_back1.setOnClickListener {
-
-            val intent = Intent(this, MainActivity :: class.java)
-            startActivity(intent)
-
-
-        }
-
-
-
-
-
 
 
 

@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8D9A81C6"
+    android:background="@drawable/ticbc"
     tools:context=".MultiplayerActivity">
 
     <TextView
         android:id="@+id/turnTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/thebomb"
+        android:gravity="center"
         android:text="Turn X"
+
         android:textColor="@color/black"
-        android:textSize="40sp"
-        app:layout_constraintHorizontal_bias="0.501"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -123,43 +125,35 @@
 
     <TextView
         android:id="@+id/points_Pl1"
-        android:layout_width="196.5dp"
+        android:layout_width="180.5dp"
         android:layout_height="47dp"
-        android:background="#25FFFFFF"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/corner_radius_score"
+        android:fontFamily="@font/thebomb"
         android:gravity="center"
-        android:text="pointsPl1: 0"
+        android:text="Player 1: 0"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/points_Pl2"
-        android:layout_width="196.5dp"
+        android:layout_width="180dp"
         android:layout_height="47dp"
-        android:background="#27FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/corner_radius_score"
+        android:fontFamily="@font/thebomb"
         android:gravity="center"
-        android:text="pointsPl2: 0"
+        android:text="Player 2: 0"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_back1"
-        android:layout_width="141dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="36dp"
-        android:text="back"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

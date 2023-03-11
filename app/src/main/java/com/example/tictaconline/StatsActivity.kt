@@ -23,20 +23,6 @@ class StatsActivity : AppCompatActivity() {
 
 
 
-        button_back = findViewById(R.id.button_back)
-
-
-
-
-        button_back.setOnClickListener {
-
-            val intent = Intent(this, MainActivity :: class.java)
-            startActivity(intent)
-
-
-        }
-
-
         textViewP1 = findViewById(R.id.Stats1)
         textViewP2 = findViewById(R.id.Stats2)
 

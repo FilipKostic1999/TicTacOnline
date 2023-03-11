@@ -79,7 +79,7 @@ class createLobby : AppCompatActivity() {
             editSelectedLobby.putString("SelectedLobby", SelectedLobby)
             editSelectedLobby.commit()
 
-            val intent = Intent(this, onlineMultiplayer :: class.java)
+            val intent = Intent(this, OnlineMultiplayer :: class.java)
             startActivity(intent)
 
 
